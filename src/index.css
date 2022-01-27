@@ -1,13 +1,139 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.edit-main-page {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edit-main-page input {
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #526B98;
+  padding: .25% .5% .25% .5%;
+}
+
+.edit-main-page input[type='checkbox'] {
+  width: 17.5px;
+  height: 17.5px;
+}
+
+.edit-main-page-top {
+  padding: 1.5%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: #526B98;
+}
+
+.edit-main-page-top h1 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.edit-main-page-top h1 span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.edit-main-page-top span {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.edit-main-page-data {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-main-page-data-one {
+  width: 25%;
+  height: 92vh;
+  padding: 1.5%;
+  overflow-y: scroll;
+}
+
+.edit-main-page-data-two {
+  width: 75%;
+  height: 92vh;
+  padding: 1.5%;
+  overflow-y: scroll;
+}
+
+.edit-main-page-data-two h1 {
+  padding-bottom: .5%;
+}
+
+.edit-main-page-data-two div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.edit-main-page-data-two div p {
+  color: #526B98;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  transition: .4s;
+  justify-content: space-evenly;
+  margin: 1.5% 2.5% 1.5% 0%;
+  border: 1px solid #526B98;
+  padding: 0.25% 2.5% .25% 2.5%;
+}
+
+.edit-main-page-data-two div p:hover {
+  color: #ffffff;
+  background-color: #526B98;
+}
+
+.edit-main-page-data-two table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 30px;
+}
+
+.edit-main-page-data-two th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+.edit-main-page-data-two tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.edit-main-page-data-two th {
+  background-color: #526B98;
+  color: white;
 }
